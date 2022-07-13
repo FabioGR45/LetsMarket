@@ -1,15 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "aSsXHQzB9ixVNWRRArMyOsC6peTl8DpyUddsVa8sLpijrOWm8E0VN3c4d951K/QweBRSCGMmZVPism9/dsDRpg==",
+  "dgSpecHash": "wUiQZj7yPSKyzIQvQZFhMULrCS1KnUAIOel13XlRuRC0cA5FTMEWdnL3Oe8nv8ExLjVMsMnODNINzDLwoEWpVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Lucas Rios\\Desktop\\Github\\Mercado3\\LetsMarket\\LetsMarket\\LetsMarket.csproj",
+  "projectFilePath": "C:\\Users\\andre\\Desktop\\Git\\ProjetoFinal\\LetsMarket\\LetsMarket\\LetsMarket\\LetsMarket.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Lucas Rios\\.nuget\\packages\\betterconsoletables\\1.1.3\\betterconsoletables.1.1.3.nupkg.sha512",
-    "C:\\Users\\Lucas Rios\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
-    "C:\\Users\\Lucas Rios\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
-    "C:\\Users\\Lucas Rios\\.nuget\\packages\\getpass\\1.0.0\\getpass.1.0.0.nupkg.sha512",
-    "C:\\Users\\Lucas Rios\\.nuget\\packages\\sharprompt\\2.4.1\\sharprompt.2.4.1.nupkg.sha512",
-    "C:\\Users\\Lucas Rios\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\andre\\.nuget\\packages\\betterconsoletables\\1.1.3\\betterconsoletables.1.1.3.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\bogus\\34.0.2\\bogus.34.0.2.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\csvhelper\\27.2.1\\csvhelper.27.2.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\getpass\\1.0.0\\getpass.1.0.0.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\sharprompt\\2.4.1\\sharprompt.2.4.1.nupkg.sha512",
+    "C:\\Users\\andre\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -248,20 +248,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lucas Rios\\.nuget\\packages\\": {}
+    "C:\\Users\\andre\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucas Rios\\Desktop\\Github\\Mercado3\\LetsMarket\\LetsMarket\\LetsMarket.csproj",
+      "projectUniqueName": "C:\\Users\\andre\\Desktop\\Git\\ProjetoFinal\\LetsMarket\\LetsMarket\\LetsMarket\\LetsMarket.csproj",
       "projectName": "LetsMarket",
-      "projectPath": "C:\\Users\\Lucas Rios\\Desktop\\Github\\Mercado3\\LetsMarket\\LetsMarket\\LetsMarket.csproj",
-      "packagesPath": "C:\\Users\\Lucas Rios\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucas Rios\\Desktop\\Github\\Mercado3\\LetsMarket\\LetsMarket\\obj\\",
+      "projectPath": "C:\\Users\\andre\\Desktop\\Git\\ProjetoFinal\\LetsMarket\\LetsMarket\\LetsMarket\\LetsMarket.csproj",
+      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\andre\\Desktop\\Git\\ProjetoFinal\\LetsMarket\\LetsMarket\\LetsMarket\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Lucas Rios\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -322,7 +330,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

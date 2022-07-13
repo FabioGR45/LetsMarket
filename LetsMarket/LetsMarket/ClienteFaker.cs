@@ -1,7 +1,7 @@
 ﻿using Bogus;
 using Bogus.Extensions.Brazil;
 
-namespace LetsMarket
+namespace LetsMarket.validations
 {
     public static class ClienteFaker
     {

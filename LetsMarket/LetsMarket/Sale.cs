@@ -1,7 +1,7 @@
 ﻿using BetterConsoleTables;
 using Sharprompt;
 
-namespace LetsMarket
+namespace LetsMarket.validations
 {
     public class Sale
     {
@@ -27,7 +27,6 @@ namespace LetsMarket
             return Description;
         }
 
-
         public static void MakeSale()
         {
             var total = decimal.Zero;
@@ -36,18 +35,7 @@ namespace LetsMarket
 
             var saleItems = new List<Sale>();
 
-            var cpf = Prompt.Input<string>("Digite o documento para identificar o cliente ou [ENTER] para continuar");
-            if (!string.IsNullOrEmpty(cpf))
-            {
-                var clientName = "";
-                foreach (var client in Database.Clients)
-                {
-                    if (client.Cpf == cpf)
-                        clientName = client.Name;
-                }
-                if (!string.IsNullOrEmpty(clientName))
-                    Console.WriteLine($"{clientName}");
-            }
+            CpfValidation.ValidateCpf();
 
             var products = Database.Products.ToList();
             var exit = new Product { ProductCode = "-1", Description = "Sair", Price = 0 };
@@ -76,37 +64,27 @@ namespace LetsMarket
                 Console.WriteLine();
                 Console.WriteLine();
 
-                // Early Return
-                product = Prompt.Select("Selecione o produto", products);
-                if (product != exit && product != closeSale && product != cancelItem)
-                {
-                    var amount = Prompt.Input<int>("Informe a quantidade", defaultValue: 1);
-                    var item = new Sale
-                    {
-                        ProductCode = product.ProductCode,
-                        Description = product.Description,
-                        UnitPrice = product.Price,
-                        Amount = amount
-                    };
-                    saleItems.Add(item);
-                    total += item.Subtotal;
-                }
 
-                if (product == cancelItem)
+                product = Prompt.Select("Selecione o produto", products);
+
+
+                total = ProductValidation.ValidateProduct(exit, closeSale, cancelItem, products, saleItems, total, product);
+
+                if (product == cancelItem && saleItems.Count > 0)
                 {
                     Console.Clear();
                     Console.WriteLine("Selecione o item a ser cancelado");
                     var item = Prompt.Select("Selecione o item a ser cancelado", saleItems);
                     saleItems.Remove(item);
 
-                    total -= item.UnitPrice;
+                    total = total - (item.UnitPrice * item.Amount);
                 }
             } while (product != exit && product != closeSale);
 
             if (product == closeSale)
             {
                 var color = Console.ForegroundColor;
-                Console.ForegroundColor = ConsoleColor.DarkBlue;
+                Console.ForegroundColor = ConsoleColor.Green;
                 Console.WriteLine($"TOTAL DA COMPRA: {total}");
                 Console.ForegroundColor = color;
                 Console.ReadKey();
