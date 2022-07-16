@@ -1,6 +1,7 @@
-﻿using System.Xml.Serialization;
+﻿using LetsMarket.validations;
+using System.Xml.Serialization;
 
-namespace LetsMarket.validations
+namespace LetsMarket
 {
     public class Save : Database
     {
