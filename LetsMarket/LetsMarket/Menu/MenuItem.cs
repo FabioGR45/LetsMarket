@@ -2,6 +2,7 @@
 namespace LetsMarket.Menu
 
 {
+
     public class MenuItem
     {
         private const string UNSELECTED = "|     ";

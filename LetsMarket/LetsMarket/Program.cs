@@ -1,13 +1,13 @@
 ﻿using LetsMarket.Menu;
+using LetsMarket.Validations;
 using Sharprompt;
 
-namespace LetsMarket.validations
+namespace LetsMarket
 {
     public class Program
     {
         static void Main()
         {
-
             MenuItem.SetPrompt();
             Console.Title = "Let's Store";
 

@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LetsMarket.Entities;
 using Sharprompt;
 
-namespace LetsMarket.validations
+namespace LetsMarket.Validations
 {
     public class ProductValidation
     {

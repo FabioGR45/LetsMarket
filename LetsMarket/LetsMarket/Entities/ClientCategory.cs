@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace LetsMarket.Enums
+namespace LetsMarket.Entities
 {
     public enum ClientCategory
     {

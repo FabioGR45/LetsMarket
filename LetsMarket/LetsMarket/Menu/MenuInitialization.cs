@@ -1,9 +1,5 @@
-﻿using LetsMarket.validations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using LetsMarket.Controller;
+
 
 namespace LetsMarket.Menu
 {
@@ -14,22 +10,22 @@ namespace LetsMarket.Menu
             var menu = new MenuItem("Menu Principal");
 
             var products = new MenuItem("Produtos");
-            products.Add(new MenuItem("Cadastrar Produto", Product.RegisterProduct));
-            products.Add(new MenuItem("Listar Produtos", Product.ListProducts));
-            products.Add(new MenuItem("Editar Produto", Product.EditProduct));
-            products.Add(new MenuItem("Remover Produto", Product.RemoveProduct));
+            products.Add(new MenuItem("Cadastrar Produto", ObjAdd.AddProduct));
+            products.Add(new MenuItem("Listar Produtos", ObjList.ListProducts));
+            products.Add(new MenuItem("Editar Produto", ObjEdit.EditProduct));
+            products.Add(new MenuItem("Remover Produto", ObjRemove.RemoveProduct));
 
             var employees = new MenuItem("Funcionários");
-            employees.Add(new MenuItem("Cadastrar Funcionário", Employee.RegisterEmployee));
-            employees.Add(new MenuItem("Listar Funcionários", Employee.ListEmployees));
-            employees.Add(new MenuItem("Editar Funcionário", Employee.EditEmployee));
-            employees.Add(new MenuItem("Remover Funcionário", Employee.RemoveEmployee));
+            employees.Add(new MenuItem("Cadastrar Funcionário", ObjAdd.AddEmployee));
+            employees.Add(new MenuItem("Listar Funcionários", ObjList.ListEmployees));
+            employees.Add(new MenuItem("Editar Funcionário", ObjEdit.EditEmployee));
+            employees.Add(new MenuItem("Remover Funcionário", ObjRemove.RemoveEmployee));
 
             var clients = new MenuItem("Clientes");
-            clients.Add(new MenuItem("Cadastrar Cliente", Client.RegisterClient));
-            clients.Add(new MenuItem("Listar Clientes", Client.ListClients));
-            clients.Add(new MenuItem("Editar Cliente", Client.EditClient));
-            clients.Add(new MenuItem("Remover Cliente", Client.RemoveClient));
+            clients.Add(new MenuItem("Cadastrar Cliente", ObjAdd.AddClient));
+            clients.Add(new MenuItem("Listar Clientes", ObjList.ListClients));
+            clients.Add(new MenuItem("Editar Cliente", ObjEdit.EditClient));
+            clients.Add(new MenuItem("Remover Cliente", ObjRemove.RemoveClient));
 
             var sales = new MenuItem("Vendas");
             sales.Add(new MenuItem("Efetuar Venda", Sale.MakeSale));

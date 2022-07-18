@@ -1,17 +1,17 @@
 ﻿using BetterConsoleTables;
+using LetsMarket.DataBase;
+using LetsMarket.Entities;
+using LetsMarket.Validations;
 using Sharprompt;
 
-namespace LetsMarket.validations
-{
-    public class Sale
-    {
+namespace LetsMarket {
+    public class Sale {
 
         private static int _largestColumn;
         private string _description;
         public static void SetSize(int size) => _largestColumn = size;
         public string ProductCode { get; set; }
-        public string Description
-        {
+        public string Description {
             get => _description;
             set
             {
@@ -47,8 +47,7 @@ namespace LetsMarket.validations
             products.Add(exit);
 
             Product product = null;
-            do
-            {
+            do {
                 Console.Clear();
                 Console.WriteLine("EFETUANDO UMA VENDA");
 

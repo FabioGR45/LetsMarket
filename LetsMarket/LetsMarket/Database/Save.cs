@@ -1,7 +1,7 @@
-﻿using LetsMarket.validations;
+﻿using LetsMarket.Entities;
 using System.Xml.Serialization;
 
-namespace LetsMarket
+namespace LetsMarket.DataBase
 {
     public class Save : Database
     {
